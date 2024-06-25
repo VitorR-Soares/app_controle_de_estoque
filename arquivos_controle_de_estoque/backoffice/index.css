@@ -1,0 +1,18 @@
+#cabecalhoPrincipal{
+    width: inherit;
+    height: 10%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a2e35;
+}
+#iFramePrincipal{
+    width: inherit;
+    border: none;
+    height: 90%
+}
+#cabecalhoPrincipal img{
+    cursor: pointer;
+    margin-right: 10px;
+}
+

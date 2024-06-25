@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba Colaboradores</title>
+    <link rel="stylesheet" href="colaboradores.css">
+    <link rel="stylesheet" href="../estoque_geral.css">
+</head>
+<body id="bodyColaboradores">
+    
+    <div id="cabecalhoColab">
+        <div> </div>
+        <div class="tituloColaboradores">Colaboradores</div>
+        <button id="btnAddColab">+</button>
+    </div>
+    <div id="exibirColaboradores">
+        <div class="containerTitulos">
+            <div class="titulo c1">ID</div>
+            <div class="titulo c2">Nome</div>
+            <div class="titulo c3">Tipo</div>
+            <div class="titulo c4">Status</div>
+            <div class="titulo c5">Operações</div>
+        </div>
+        <div class="containerConteudo">
+                <!-- <div class="linhaConteudo">
+                    <div class="dado c1">ID</div>
+                    <div class="dado c2">Nome</div>
+                    <div class="dado c3">Tipo</div>
+                    <div class="dado c4">Status</div>
+                    <div class="dado c5">Operações</div>
+                </div>
+                <div class="linhaConteudo">
+                    <div class="dado c1">ID</div>
+                    <div class="dado c2">Nome</div>
+                    <div class="dado c3">Tipo</div>
+                    <div class="dado c4">Status</div>
+                    <div class="dado c5">Operações</div>
+                </div>
+                <div class="linhaConteudo">
+                    <div class="dado c1">ID</div>
+                    <div class="dado c2">Nome</div>
+                    <div class="dado c3">Tipo</div>
+                    <div class="dado c4">Status</div>
+                    <div class="dado c5">Operações</div>
+                </div> -->
+        </div>
+    </div>
+    <div class="fundoPopUp ocultarPopUp">
+        <div class="PopUp">
+            <div class="cabecalhoPopUp">
+                <div>Adicionar colaborador</div>
+                <button class="btnFecharPopUp">X</button>
+            </div>
+            <div class="corpoPopUp">
+                <div class="elementoPopup">
+                    <label>Nome</label>
+                    <input class="inputPopUp" type="text">
+                </div>
+                <div class="elementoPopup">
+                    <label>Tipo</label>
+                    <select class="inputPopUp" name="tipoForm" id="tipoForm"></select>
+                </div>
+                <div class="elementoPopup">
+                    <label>Status</label>
+                    <select class="inputPopUp" name="statusForm" id="statusForm">
+                        <option value="A">Ativo</option>
+                        <option value="I">Inativo</option>
+                    </select>
+                </div>
+                <div class="elementoPopup">
+                    <label>Telefone</label>
+                    <input id="inputTel" class="inputPopUp" type="text">
+                    <div class="exibirInfo">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="rodapePopUp">
+                <button id="btnGravar" class="btnPopUp">
+                    Gravar
+                </button>
+                <button id="btnCancelar" class="btnPopUp">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="colaboradores.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --preto: #2e2836;
+    --vinho: #6a2e35;
+    --laranja: #be8a60;
+    --laranja_claro: #e1aa7d;
+    --verde: #b6d094;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.menuLateral{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s
+}
+.ocultar {
+    left: -200px;
+    transition: all .2s;
+}
+.menuItens {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--laranja);
+    height: 100vh;
+    width: 200px;
+    text-decoration: none;
+}
+.menuItens a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menuItem{
+    background-color: var(--laranja_claro);
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnMenu {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--laranja);
+    cursor: pointer;
+    border: none;
+}
+#bodyIndex {
+    width: 100vw;
+    height: 100vh;
+}
+#bodyColaboradores{
+    background-color: var(--verde);
+}
+/*******Configuração PopUp's********************/
+.fundoPopUp{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabecalhoPopUp{
+    background-color: var(--preto);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.btnFecharPopUp{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.corpoPopUp{
+    background-color: var(--laranja);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+}
+.rodapePopUp {
+    background-color: var(--preto);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.btnPopUp{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    background-color: var(--laranja_claro);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ocultarPopUp {
+    display: none;
+}
+.elementoPopup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inputPopUp{
+    border: none;
+    background-color: var(--laranja_claro);
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.exibirInfo {
+    width: inherit;
+    background-color: var(--laranja_claro);
+    min-height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.containerTelefone {
+    background-color: #fff;
+    display: flex;
+    padding-left: 5px;
+    min-width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnExcluiTel {
+    background-color: #f00;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************/
